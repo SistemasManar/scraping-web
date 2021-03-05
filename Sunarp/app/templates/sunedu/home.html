@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% block title %}MANAR{% endblock %}
+
+{% block styles %}
+  {{ super() }}
+{% endblock %}
+
+{% block content %}
+  <div class="container-fluid" style="margin-top: 10px;">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+            <div class="alert alert-{{ category }}" role="alert">
+              {{ message }}
+            </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h2 class="panel-title">
+          <strong>Grados Académicos</strong>
+        </h2>
+      </div>
+      <div class="panel-body">
+        <p class="lead">Mostrando los últimos registros</p>
+        <table id="graduates-table" class="table table-bordered table-condensed" style="font-size: 13px;">
+          <thead>
+            <tr>
+              <th>DNI</th>
+              <th>GRADUADO</th>
+              <th>GRADO O TÍTULO</th>
+              <th>INSTITUCIÓN</th>
+            </th>
+          </thead>
+          <tbody>
+            {% for record in records %}
+              {% set state_to_color = {0: 'info', 1: 'success', 2: 'warning', 3: 'danger'}%}
+              <tr class="{{ state_to_color[record[0]] }}">
+                <td style="vertical-align: middle;">
+                  {{ record[1] }}
+                </td>
+                <td style="vertical-align: middle;">
+                  {{ (record[2].replace('\n', '<br><br>') if record[2] else '')|safe }}
+                </td>
+                <td style="vertical-align: middle;">
+                  {{ (record[3].replace('\n', '<br><br>') if record[3] else '')|safe  }}
+                </td>
+                <td style="vertical-align: middle;">
+                  {{ (record[4].replace('\n', '<br><br>') if record[4] else '')|safe  }}
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <div class="actions" style="margin-top: 15px;">
+          <a href="/" class="btn btn-default">
+            <i class="fa fa-arrow-left fa-fw"></i>
+            Regresar
+          </a>
+          <a href="/sunedu/search" class="btn btn-default">
+            <i class="fa fa-search fa-fw"></i>
+            Buscar
+          </a>
+          <a href="/sunedu/query" class="btn btn-default">
+            <i class="fa fa-user fa-fw"></i>
+            Consultar graduado
+          </a>
+          <a href="/sunedu/upload" class="btn btn-default">
+            <i class="fa fa-upload fa-fw"></i>
+            Subir archivo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#graduates-table').DataTable({
+        "info": false,
+        "searching": false,
+        "paging": false,
+        "language": {
+          "url": "http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
+        },
+        "columnDefs": [
+          {
+            "targets": 0,
+            "render": function (data, type, row, meta) {
+              return "<a href='/sunedu/graduate/" + data + "'>" + data +"</a>";
+            }
+          }
+        ]
+      });
+    });
+  </script>
+{% endblock %}

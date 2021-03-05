@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+
+{% block title %}MANAR{% endblock %}
+
+{% block navbar %}
+  <div class="navbar navbar-fixed-top">
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="container" style="margin-top: 5px;">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+            <div class="alert alert-{{ category }}" role="alert">
+              {{ message }}
+            </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+    <div class="panel panel-default" style="margin-top: 10px;">
+      <div class="panel-heading">
+        <h2 class="panel-title">
+          <strong>Graduado {{ graduate.id }}</strong>
+        </h2>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-{{ graduate.status_class }} bg-{{ graduate.status_class }}" style="padding: 15px; margin: 0 0 20px 0;">
+              Estado del scraping:
+              <strong>
+                {{ graduate.status_text }}
+              </strong>
+            </p>
+          </div>
+        </div>
+        <form method="POST" enctype="multipart/form-data">
+          {{ form.hidden_tag() }}
+          <div class="row">
+            <div class="col-md-12">
+              <p class="lead text-primary">
+                <strong>Registros</strong>
+              </p>
+              <table class="table table-bordered table-responsive">
+                <thead>
+                  <th>GRADUADO</th>
+                  <th>GRADO O TÍTULO</th>
+                  <th>INSTITUCIÓN</th>
+                </thead>
+                <tbody>
+                  {% for record in records %}
+                    <tr>
+                      <td style="vertical-align: middle;">
+                        {{ (record.name.replace('\n', '<br><br>') or '')|safe }}
+                      </td>
+                      <td style="vertical-align: middle;">
+                        {{ (record.grade.replace('\n', '<br><br>') or '')|safe }}
+                      </td>
+                      <td style="vertical-align: middle;">
+                        {{ (record.institution.replace('\n', '<br><br>') or '')|safe }}
+                      </td>
+                    </tr>
+                  {% else %}
+                    <tr>
+                      <td colspan="4">
+                        No cuenta con registros
+                      </td>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+          {{ form.submit(class="btn btn-primary") }}
+          {{ form.reprocess(class="btn btn-primary") }}
+          <a href="/sunedu" class="btn btn-default">Regresar</a>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("img").on("error", function(event) {
+        $(event.target).attr("src", "https://via.placeholder.com/540x500?text=Imagen+no+disponible");
+      });
+    });
+  </script>
+{% endblock %}

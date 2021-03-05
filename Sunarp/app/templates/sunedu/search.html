@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block title %}MANAR{% endblock %}
+
+{% block navbar %}
+  <div class="navbar navbar-fixed-top">
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="container-fluid">
+    <div class="panel panel-default" style="margin-top: 10px;">
+      <div class="panel-heading">
+        <h2 class="panel-title">
+          <strong>Buscar</strong>
+        </h2>
+      </div>
+      <div class="panel-body">
+        <form method="POST" novalidate="">
+          {{ form.hidden_tag() }}
+          <div class="form-group {% if form.term.errors %}has-error{% endif %}">
+            {{ form.term.label(class="control-label") }}
+            {{ form.term(class="form-control", placeholder="D.N.I., grado, institución, etc.") }}
+          </div>
+          <input type="submit" class="btn btn-primary" value="Buscar">
+          <a href="/sunedu" class="btn btn-default">Regresar</a>
+        </form>
+        <hr>
+        <table id="graduates-table" class="table table-bordered table-condensed" style="font-size: 13px;">
+          <thead>
+            <tr>
+              <th>D.N.I.</th>
+              <th>GRADUADO</th>
+              <th>GRADO O TÍTULO</th>
+              <th>INSTITUCIÓN</th>
+            </th>
+          </thead>
+          <tbody>
+            {% for record in records %}
+              {% set state_to_color = {0: 'info', 1: 'success', 2: 'warning', 3: 'danger'}%}
+              <tr class="{{ state_to_color[record[0]] }}">
+                <td style="vertical-align: middle;">
+                  {{ record[1] }}
+                </td>
+                <td style="vertical-align: middle;">
+                  {{ (record[2].replace('\n', '<br><br>') if record[2] else '-')|safe }}
+                </td>
+                <td style="vertical-align: middle;">
+                  {{ (record[3].replace('\n', '<br><br>') if record[3] else '-')|safe  }}
+                </td>
+                <td style="vertical-align: middle;">
+                  {{ (record[4].replace('\n', '<br><br>') if record[4] else '-')|safe  }}
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#graduates-table').DataTable({
+        "searching": false,
+        "language": {
+          "url": "http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
+        },
+        "columnDefs": [
+          {
+            "targets": 0,
+            "render": function (data, type, row, meta) {
+              return "<a href='/sunedu/graduate/" + data + "'>" + data +"</a>";
+            }
+          }
+        ]
+      });
+    });
+  </script>
+{% endblock %}

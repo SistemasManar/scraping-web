@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}MANAR{% endblock %}
+
+{% block navbar %}
+  <div class="navbar navbar-fixed-top">
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="panel panel-default" style="margin-top: 10px;">
+      <div class="panel-heading">
+        <h2 class="panel-title">
+          <strong>Consultar médico</strong>
+        </h2>
+      </div>
+      <div class="panel-body">
+        <form method="POST" enctype="multipart/form-data" novalidate="">
+          {{ form.hidden_tag() }}
+          <div class="form-group {% if form.cmp.errors %}has-error{% endif %}">
+            {{ form.cmp.label(class="control-label") }}
+            {{ form.cmp(class="form-control", placeholder="Ejemplos: 034148, 056387") }}
+            {% if form.cmp.errors %}
+              {% for error in form.cmp.errors %}
+                <p class="text-danger bg-danger" style="padding: 10px;">{{ error }}</div>
+              {% endfor %}
+            {% endif %}
+          </div>
+          <input type="submit" class="btn btn-primary" value="Consultar">
+          <a href="/cmp" class="btn btn-default">Regresar</a>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}

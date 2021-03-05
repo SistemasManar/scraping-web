@@ -1,0 +1,147 @@
+{% extends "base.html" %}
+
+{% block title %}MANAR{% endblock %}
+
+{% block navbar %}
+  <div class="navbar navbar-fixed-top">
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="container" style="margin-top: 5px;">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+            <div class="alert alert-{{ category }}" role="alert">
+              {{ message }}
+            </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+    <div class="panel panel-default" style="margin-top: 10px;">
+      <div class="panel-heading">
+        <h2 class="panel-title">
+          <strong>Doctor {{ doctor.id }}</strong>
+        </h2>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-{{ doctor.status_class }} bg-{{ doctor.status_class }}" style="padding: 15px; margin: 0 0 20px 0;">
+              Estado del scraping:
+              <strong>
+                {{ doctor.status_text }}
+              </strong>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="thumbnail">
+              <img class="img-rounded" src="http://35.227.74.45/{{ doctor.image_path }}">
+              <div style="margin: 3px;">
+                <a href="https://200.48.13.39/cmp/php/detallexmedico.php?id={{ doctor.id }}" target="_blank">
+                  <strong>Ver ficha original</strong>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form method="POST" enctype="multipart/form-data">
+          {{ form.hidden_tag() }}
+          <div class="row">
+            <div class="col-md-12">
+              <p class="lead text-primary">
+                <strong>Datos</strong>
+              </p>
+              <div class="form-group {% if form.name.errors %}has-error{% endif %}">
+                {{ form.name.label }}
+                {{ form.name(class="form-control") }}
+              </div>
+              <div class="form-group {% if form.surname.errors %}has-error{% endif %}">
+                {{ form.surname.label }}
+                {{ form.surname(class="form-control") }}
+              </div>
+              <div class="form-group {% if form.state.errors %}has-error{% endif %}">
+                {{ form.state.label }}
+                {{ form.state(class="form-control") }}
+              </div>
+              <div class="form-group {% if form.email.errors %}has-error{% endif %}">
+                {{ form.email.label }}
+                {{ form.email(class="form-control") }}
+              </div>
+              <div class="form-group {% if form.region.errors %}has-error{% endif %}">
+                {{ form.region.label }}
+                {{ form.region(class="form-control") }}
+              </div>
+              <div class="form-group {% if form.region.errors %}has-error{% endif %}">
+                {{ form.notes.label }}
+                {{ form.notes(class="form-control") }}
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-12">
+              <p class="lead text-primary">
+                <strong>Especialidades</strong>
+              </p>
+              <table class="table table-bordered table-responsive">
+                <thead>
+                  <th>NOMBRE</th>
+                  <th>TIPO</th>
+                  <th>CÓDIGO</th>
+                  <th>CERTIFICACIÓN</th>
+                </thead>
+                <tbody>
+                  {% for specialty in specialties %}
+                    <tr>
+                      <td>
+                        {{ specialty.name or '' }}
+                      </td>
+                      <td>
+                        {{ specialty.type or '' }}
+                      </td>
+                      <td>
+                        {{ specialty.code or ''}}
+                      </td>
+                      <td>
+                        {{ specialty.end_date.strftime('%d/%m/%Y') if specialty.end_date else ''}}
+                      </td>
+                    </tr>
+                  {% else %}
+                    <tr>
+                      <td colspan="4">
+                        No cuenta con especialidades
+                      </td>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+          {{ form.submit(class="btn btn-primary") }}
+          {{ form.reprocess(class="btn btn-primary") }}
+          <a href="/cmp" class="btn btn-default">Regresar</a>
+        </form>
+
+        <div class="row">
+          <div class="col-md-12">
+
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("img").on("error", function(event) {
+        $(event.target).attr("src", "https://via.placeholder.com/100x135?text=N%2FA");
+      });
+    });
+  </script>
+{% endblock %}

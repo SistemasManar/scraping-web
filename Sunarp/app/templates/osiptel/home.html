@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+
+{% block title %}MANAR{% endblock %}
+
+{% block styles %}
+  {{ super() }}
+{% endblock %}
+
+{% block content %}
+  <div class="container-fluid" style="margin-top: 10px;">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+            <div class="alert alert-{{ category }}" role="alert">
+              {{ message }}
+            </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h2 class="panel-title">
+          <strong>Lineas de Operadoras - OSIPTEL</strong>
+        </h2>
+      </div>
+      <div class="panel-body">
+        <p class="lead">Mostrando los últimos registros</p>
+        <table id="graduates-table" class="table table-bordered table-condensed" style="font-size: 13px;">
+          <thead>
+            <tr>
+              <th>RUC</th>
+              <th>DNI</th>
+              <th>PROVEEDOR</th>
+              <th>CANT. LINEAS TELEFÓNICAS</th>
+            </th>
+          </thead>
+          <tbody>
+            {% for record in records %}
+              {% set state_to_color = {0: 'info', 1: 'success', 2: 'warning', 3: 'danger'}%}
+              <tr class="{{ state_to_color[record[0]] }}">
+                <td style="vertical-align: middle;">
+                  {{ record[1] }}<p style="display: none;"> - {{ record[2] }} - {{ record[3] }}</p>
+                </td>
+                <td style="vertical-align: middle;">
+                  {{ record[2] }}
+                </td>
+                <td style="vertical-align: middle;">
+                  {{ record[3] }}
+                </td>
+                <td style="vertical-align: middle;">
+                  {{ record[4] }}
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <div class="actions" style="margin-top: 15px;">
+          <a href="/" class="btn btn-default">
+            <i class="fa fa-arrow-left fa-fw"></i>
+            Regresar
+          </a>
+          <a href="/osiptel/search" class="btn btn-default">
+            <i class="fa fa-search fa-fw"></i>
+            Buscar
+          </a>
+          <a href="/osiptel/query" class="btn btn-default">
+            <i class="fa fa-user fa-fw"></i>
+            Consultar
+          </a>
+          <a href="/osiptel/upload" class="btn btn-default">
+            <i class="fa fa-upload fa-fw"></i>
+            Subir archivo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#graduates-table').DataTable({
+        "searching": false,
+        "orderCellsTop": true,
+        "pageLength": 10,
+        "language": {
+          "url": "http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
+        },
+        "columnDefs": [
+          {
+            "targets": 0,
+            "render": function (data, type, row, meta) {
+              var cadena = data.split(' - ');
+              var ruc = cadena[0].replace("<p style=\"display: none;\">", "");
+              var dni = cadena[1];
+              var provider = cadena[2].replace("</p>", "");
+              return "<a href='/osiptel/rrll/"+ruc+"/"+dni+"/"+provider+"'>" + data +"</a>";
+            }
+          }
+        ]
+      });
+    });
+  </script>
+{% endblock %}

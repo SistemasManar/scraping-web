@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %}MANAR{% endblock %}
+
+{% block navbar %}
+  <div class="navbar navbar-fixed-top">
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="panel panel-default" style="margin-top: 10px;">
+      <div class="panel-heading">
+        <h2 class="panel-title">
+          <strong>Consultar RRLL del RUC y DNI</strong>
+        </h2>
+      </div>
+      <div class="panel-body">
+        <form method="POST" enctype="multipart/form-data" novalidate="">
+          <div class="container-fluid">
+            <div class="form-row">
+              <div class="col-lg-5">
+                {{ form.hidden_tag() }}
+                <div class="form-group {% if form.document_ruc.errors %}has-error{% endif %}">
+                  {{ form.document_ruc.label(class="control-label") }}
+                  {{ form.document_ruc(class="form-control", placeholder="Ejemplos: 20492608069, 20521200554") }}
+                  {% if form.document_ruc.errors %}
+                    {% for error in form.document_ruc.errors %}
+                      <p class="text-danger bg-danger" style="padding: 10px;">{{ error }}</p>
+                    {% endfor %}
+                  {% endif %}
+                </div>
+              </div>
+              <div class="col-lg-5">
+                {{ form.hidden_tag() }}
+                <div class="form-group {% if form.document_dni.errors %}has-error{% endif %}">
+                  {{ form.document_dni.label(class="control-label") }}
+                  {{ form.document_dni(class="form-control", placeholder="Ejemplos: 07820479, 06636177") }}
+                  {% if form.document_dni.errors %}
+                    {% for error in form.document_dni.errors %}
+                      <p class="text-danger bg-danger" style="padding: 10px;">{{ error }}</p>
+                    {% endfor %}
+                  {% endif %}
+                </div>
+              </div>
+              <div class="col-lg-2" style="padding: 25px 0px; text-align: right;">
+                <input type="submit" class="btn btn-primary" value="Consultar">
+                <a href="/osiptel" class="btn btn-default">Regresar</a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}

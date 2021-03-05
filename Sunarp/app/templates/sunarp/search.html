@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+
+{% block title %}MANAR{% endblock %}
+
+{% block navbar %}
+  <div class="navbar navbar-fixed-top">
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="container-fluid">
+    <div class="panel panel-default" style="margin-top: 10px;">
+      <div class="panel-heading">
+        <h2 class="panel-title">
+          <strong>Buscar</strong>
+        </h2>
+      </div>
+      <div class="panel-body">
+        <form method="POST" novalidate="">
+          {{ form.hidden_tag() }}
+          <div class="form-group {% if form.term.errors %}has-error{% endif %}">
+            {{ form.term.label(class="control-label") }}
+            {{ form.term(class="form-control", placeholder="Placa, VIN, etc.") }}
+          </div>
+          <input type="submit" class="btn btn-primary" value="Buscar">
+          <a href="/sunarp" class="btn btn-default">Regresar</a>
+        </form>
+        <hr>
+        <table id="vehicles-table" class="table table-bordered table-condensed" style="font-size: 13px;">
+          <thead>
+            <tr>
+              <th>REAL</th>
+              <th>PLACA</th>
+              <th>SERIE</th>
+              <th>VIN</th>
+              <th>MOTOR</th>
+              <th>COLOR</th>
+              <th>MARCA</th>
+              <th>MODELO</th>
+              <th>PLACA VIGENTE</th>
+              <th>PLACA ANTERIOR</th>
+              <th>ESTADO</th>
+              <th>ANOTACIONES</th>
+              <th>SEDE</th>
+              <th>PROPIETARIOS</th>
+            </th>
+          </thead>
+          <tbody>
+            {% for vehicle in vehicles %}
+              {% set state_to_color = {0: 'info', 1: 'success', 2: 'warning', 3: 'danger'}%}
+              <tr class="{{ state_to_color[vehicle[14]] }}">
+                <td>{{ vehicle[0] }}</td>
+                <td class="{% if vehicle[12] == True %}danger{% endif %}">
+                  {{ vehicle[1] or '-'  }}
+                </td>
+                <td>{{ vehicle[2] or '-'  }}</td>
+                <td>{{ vehicle[3] or '-'  }}</td>
+                <td>{{ vehicle[4] or '-'  }}</td>
+                <td>{{ vehicle[5] or '-'  }}</td>
+                <td>{{ vehicle[6] or '-'  }}</td>
+                <td>{{ vehicle[7] or '-'  }}</td>
+                <td>{{ vehicle[8] or '-'  }}</td>
+                <td>{{ vehicle[9] or '-'  }}</td>
+                <td>{{ vehicle[10] or '-'  }}</td>
+                <td>{{ vehicle[11] or '-'  }}</td>
+                <td>{{ vehicle[12] or '-' }}</td>
+                {% set owners = '<br>'.join(vehicle[13].split('|')) if vehicle[13] else '-' %}
+                <td>{{ owners|safe }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script type="text/javascript">
+    function getEnqueuedJobs() {
+      $.ajax({
+        type:"get",
+        url:"/get-queued-jobs",
+        success:function(response) {
+          $("#total-jobs").html(response.jobs);
+        }
+      });
+    }
+
+    $(document).ready(function() {
+      setInterval(getEnqueuedJobs, 5000);
+      $('#vehicles-table').DataTable({
+        "searching": false,
+        "language": {
+          "url": "http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
+        },
+        "columnDefs": [
+          {
+            "width": "20%", "targets": 13
+          },
+          {
+            "targets": 0,
+            "render": function (data, type, row, meta) {
+              return "<a href='/sunarp/vehicle/" + data + "'>" + data +"</a>";
+            }
+          }
+        ]
+      });
+    });
+  </script>
+{% endblock %}

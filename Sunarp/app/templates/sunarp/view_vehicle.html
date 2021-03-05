@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+
+{% block title %}MANAR{% endblock %}
+
+{% block navbar %}
+  <div class="navbar navbar-fixed-top">
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="container" style="margin-top: 5px;">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+            <div class="alert alert-{{ category }}" role="alert">
+              {{ message }}
+            </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+    <div class="panel panel-default" style="margin-top: 10px;">
+      <div class="panel-heading">
+        <h2 class="panel-title">
+          <strong>Vehículo {{ vehicle.id }}</strong>
+        </h2>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-{{ vehicle.status_class }} bg-{{ vehicle.status_class }}" style="padding: 15px; margin: 0 0 20px 0;">
+              Estado del scraping:
+              <strong>
+                {{ vehicle.status_text }}
+              </strong>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <div class="thumbnail">
+              <img class="img-rounded" src="http://35.227.74.45/{{ vehicle.image_path }}">
+            </div>
+          </div>
+        </div>
+        <form method="POST" enctype="multipart/form-data">
+          {{ form.hidden_tag() }}
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group {% if form.plate_number.errors %}has-error{% endif %}">
+                {{ form.plate_number.label }}
+                {{ form.plate_number(class="form-control") }}
+              </div>
+              <div class="form-group {% if form.serial_number.errors %}has-error{% endif %}">
+                {{ form.serial_number.label }}
+                {{ form.serial_number(class="form-control") }}
+              </div>
+              <div class="form-group {% if form.vin_number.errors %}has-error{% endif %}">
+                {{ form.vin_number.label }}
+                {{ form.vin_number(class="form-control") }}
+              </div>
+              <div class="form-group {% if form.engine_number.errors %}has-error{% endif %}">
+                {{ form.engine_number.label }}
+                {{ form.engine_number(class="form-control") }}
+              </div>
+              <div class="form-group {% if form.color.errors %}has-error{% endif %}">
+                {{ form.color.label }}
+                {{ form.color(class="form-control") }}
+              </div>
+              <div class="form-group {% if form.make.errors %}has-error{% endif %}">
+                {{ form.make.label }}
+                {{ form.make(class="form-control") }}
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group {% if form.model.errors %}has-error{% endif %}">
+                {{ form.model.label }}
+                {{ form.model(class="form-control") }}
+              </div>
+              <div class="form-group {% if form.valid_plate_number.errors %}has-error{% endif %}">
+                {{ form.valid_plate_number.label }}
+                {{ form.valid_plate_number(class="form-control") }}
+              </div>
+              <div class="form-group {% if form.previous_plate_number.errors %}has-error{% endif %}">
+                {{ form.previous_plate_number.label }}
+                {{ form.previous_plate_number(class="form-control") }}
+              </div>
+              <div class="form-group {% if form.state.errors %}has-error{% endif %}">
+                {{ form.state.label }}
+                {{ form.state(class="form-control") }}
+              </div>
+              <div class="form-group {% if form.notes.errors %}has-error{% endif %}">
+                {{ form.notes.label }}
+                {{ form.notes(class="form-control") }}
+              </div>
+              <div class="form-group {% if form.branch.errors %}has-error{% endif %}">
+                {{ form.branch.label }}
+                {{ form.branch(class="form-control") }}
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group {% if form.owners.errors %}has-error{% endif %}">
+                {{ form.owners.label }}
+                {{ form.owners(class="form-control") }}
+              </div>
+            </div>
+          </div>
+          {{ form.submit(class="btn btn-primary") }}
+          {{ form.reprocess(class="btn btn-primary") }}
+          <a href="/sunarp" class="btn btn-default">Regresar</a>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("img").on("error", function(event) {
+        $(event.target).attr("src", "https://via.placeholder.com/540x500?text=Imagen+no+disponible");
+      });
+    });
+  </script>
+{% endblock %}

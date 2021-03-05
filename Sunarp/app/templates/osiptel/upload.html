@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}MANAR{% endblock %}
+
+{% block navbar %}
+  <div class="navbar navbar-fixed-top">
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="panel panel-default" style="margin-top: 10px;">
+      <div class="panel-heading">
+        <h2 class="panel-title">
+          <strong>Subir archivo</strong>
+        </h2>
+      </div>
+      <div class="panel-body">
+        <form method="POST" enctype="multipart/form-data" novalidate="">
+          {{ form.hidden_tag() }}
+          <div class="form-group {% if form.file.errors %}has-error{% endif %}">
+            {{ form.file.label(class="control-label") }}
+            {{ form.file(class="form-control") }}
+            <p class="help-block">Formatos permitidos: CSV</p>
+          </div>
+          <input type="submit" class="btn btn-primary" value="Procesar">
+          <a href="/osiptel" class="btn btn-default">Regresar</a>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}

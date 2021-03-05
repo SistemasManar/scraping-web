@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block title %}MANAR{% endblock %}
+
+{% block styles %}
+  {{ super() }}
+{% endblock %}
+
+{% block content %}
+  <div class="container-fluid" style="margin-top: 10px;">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+            <div class="alert alert-{{ category }}" role="alert">
+              {{ message }}
+            </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h2 class="panel-title">
+          <strong>Servicios</strong>
+        </h2>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-md-2">
+              <a href="/sunarp">
+                <img class="img-responsive" src="/static/images/sunarp.jpeg" width="200" height="200">
+              </a>
+          </div>
+          <div class="col-md-2">
+              <a href="/sunedu">
+                <img class="img-responsive" src="/static/images/sunedu.png" width="200" height="200">
+              </a>
+          </div>
+          <div class="col-md-2">
+              <a href="/cmp">
+                <img class="img-responsive" src="/static/images/cmp.png" width="200" height="200">
+              </a>
+          </div>
+          <div class="col-md-2">
+              <a href="/osiptel">
+                <img class="img-responsive" src="/static/images/osiptel.png" width="200" height="200"
+                style="padding: 72px 0px;">
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#vehicles-table').DataTable({
+        "info": false,
+        "searching": false,
+        "paging": false,
+        "language": {
+          "url": "http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
+        },
+        "columnDefs": [
+          {
+            "width": "20%", "targets": 13
+          },
+          {
+            "targets": 0,
+            "render": function (data, type, row, meta) {
+              return "<a href='/vehicle/" + data + "'>" + data +"</a>";
+            }
+          }
+        ]
+      });
+    });
+  </script>
+{% endblock %}

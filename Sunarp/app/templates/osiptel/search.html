@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+{% block title %}MANAR{% endblock %}
+
+{% block navbar %}
+  <div class="navbar navbar-fixed-top">
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="panel panel-default" style="margin-top: 10px;">
+      <div class="panel-heading">
+        <h2 class="panel-title">
+          <strong>Buscar</strong>
+        </h2>
+      </div>
+      <div class="panel-body">
+        <form method="POST" novalidate="">
+          <div class="form-row">
+            <div class="col-lg-10">
+              {{ form.hidden_tag() }}
+              <div class="form-group {% if form.term.errors %}has-error{% endif %}">
+                {{ form.term.label(class="control-label") }}
+                {{ form.term(class="form-control", placeholder="RUC, DNI, PROVEEDOR o MODALIDAD") }}
+              </div>
+            </div>
+            <div class="col-lg-2" style="padding: 25px 0px; text-align: right;">
+              <input type="submit" class="btn btn-primary" value="Buscar">
+              <a href="/osiptel" class="btn btn-default">Regresar</a>
+            </div>
+          </div>
+        </form>
+        <hr style="margin-bottom: 10px;">
+        <table id="search-table" class="table table-bordered table-condensed" style="font-size: 13px;">
+          <thead>
+            <tr>
+              <th>RUC</th>
+              <th>DNI</th>
+              <th>PROVEEDOR</th>
+              <th>CANT. LINEAS TELEFÓNICAS</th>
+            </th>
+          </thead>
+          <tbody>
+            {% for record in records %}
+              {% set state_to_color = {0: 'info', 1: 'success', 2: 'warning', 3: 'danger'}%}
+              <tr class="{{ state_to_color[record[0]] }}">
+                <td style="vertical-align: middle;">
+                  {{ record[1] }}<p style="display: none;"> - {{ record[2] }} - {{ record[3] }}</p>
+                </td>
+                <td style="vertical-align: middle;">
+                  {{ record[2] }}
+                </td>
+                <td style="vertical-align: middle;">
+                  {{ record[3] }}
+                </td>
+                <td style="vertical-align: middle;">
+                  {{ record[4] }}
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#search-table').DataTable({
+        "searching": true,
+        "pageLength": 25,
+        "language": {
+          "url": "http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
+        },
+        "columnDefs": [
+          {
+            "width": "20%", "targets": 3
+          },
+          {
+            "targets": 0,
+            "render": function (data, type, row, meta) {
+              var cadena = data.split(' - ');
+              var ruc = cadena[0].replace("<p style=\"display: none;\">", "");
+              var dni = cadena[1];
+              var provider = cadena[2].replace("</p>", "");
+              return "<a href='/osiptel/rrll/"+ruc+"/"+dni+"/"+provider+"'>" + data +"</a>";
+            }
+          }
+        ]
+      });
+    });
+  </script>
+{% endblock %}

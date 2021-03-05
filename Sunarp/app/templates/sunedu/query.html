@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}MANAR{% endblock %}
+
+{% block navbar %}
+  <div class="navbar navbar-fixed-top">
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="panel panel-default" style="margin-top: 10px;">
+      <div class="panel-heading">
+        <h2 class="panel-title">
+          <strong>Consultar graduado</strong>
+        </h2>
+      </div>
+      <div class="panel-body">
+        <form method="POST" enctype="multipart/form-data" novalidate="">
+          {{ form.hidden_tag() }}
+          <div class="form-group {% if form.document_number.errors %}has-error{% endif %}">
+            {{ form.document_number.label(class="control-label") }}
+            {{ form.document_number(class="form-control", placeholder="Ejemplos: 47245689, 09645223") }}
+            {% if form.document_number.errors %}
+              {% for error in form.document_number.errors %}
+                <p class="text-danger bg-danger" style="padding: 10px;">{{ error }}</p>
+              {% endfor %}
+            {% endif %}
+          </div>
+          <input type="submit" class="btn btn-primary" value="Consultar">
+          <a href="/sunedu" class="btn btn-default">Regresar</a>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}

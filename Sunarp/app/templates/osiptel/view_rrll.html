@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+
+{% block title %}MANAR{% endblock %}
+
+{% block navbar %}
+  <div class="navbar navbar-fixed-top">
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="container" style="margin-top: 5px;">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+            <div class="alert alert-{{ category }}" role="alert">
+              {{ message }}
+            </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+    <div class="panel panel-default" style="margin-top: 10px;">
+      <div class="panel-heading">
+        <div class="row">
+          <div class="col-lg-9">
+            <h2 class="panel-title" style="padding-top: 9px;">
+              <strong>Documento RUC: {{ rrll.ruc }}  |  Representante Legal: {{ rrll.dni }}</strong>
+            </h2>
+          </div>
+          <div class="col-lg-3">
+            <div class="form-inline" style="text-align: right;">
+              <p style="margin-bottom: 0px"><span>Proveedor: </span>{{ form.sel_provider(class_="form-control") }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-{{ rrll.status_class }} bg-{{ rrll.status_class }}" style="padding: 15px; margin: 0 0 20px 0;">
+              Estado del scraping:
+              <strong>
+                {{ rrll.status_text }}
+              </strong>
+            </p>
+          </div>
+        </div>
+        <form method="POST" enctype="multipart/form-data">
+          {{ form.hidden_tag() }}
+          <div class="row" style="padding: 0px 0px 10px 0px;">
+            <div class="col-md-12">
+              <p class="lead text-primary">
+                <strong>Registros</strong>
+              </p>
+              <table id="lineas-table" class="table table-bordered table-responsive">
+                <thead>
+                  <th>MODALIDAD</th>
+                  <th>NÚMERO TELEFONICO</th>
+                </thead>
+                <tbody>
+                  {% for record in records %}
+                    <tr>
+                      <td style="vertical-align: middle;">
+                        {{ (record.modality.replace('\n', '<br><br>') or '')|safe }}
+                      </td>
+                      <td style="vertical-align: middle;">
+                        {{ (record.telephone.replace('\n', '<br><br>') or '')|safe }}
+                      </td>
+                    </tr>
+                  {% else %}
+                    <tr>
+                      <td colspan="4">
+                        No cuenta con registros
+                      </td>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+          {{ form.reprocess(class="btn btn-primary") }}
+          <a href="/osiptel" class="btn btn-default">Regresar</a>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#lineas-table').DataTable({
+        "info": false,
+        "pageLength": 25,
+        "orderCellsTop": true,
+        "searching": true,
+        "paging": true,
+        "language": {
+          "url": "http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
+        }
+      });
+    });
+    $("#sel_provider").change(function() {
+      var selected = $(this).children("option:selected").val();
+      var url = window.location.href;
+      var cadena = url.replace((window.location.href).split('/')[7], "");
+      window.location.href = cadena + selected;
+    });
+  </script>
+{% endblock %}

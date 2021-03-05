@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}MANAR{% endblock %}
+
+{% block navbar %}
+  <div class="navbar navbar-fixed-top">
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="panel panel-default" style="margin-top: 10px;">
+      <div class="panel-heading">
+        <h2 class="panel-title">
+          <strong>Consultar placa</strong>
+        </h2>
+      </div>
+      <div class="panel-body">
+        <form method="POST" enctype="multipart/form-data" novalidate="">
+          {{ form.hidden_tag() }}
+          <div class="form-group {% if form.plate_number.errors %}has-error{% endif %}">
+            {{ form.plate_number.label(class="control-label") }}
+            {{ form.plate_number(class="form-control", placeholder="Ejemplos: ABC-123, abc-123, ABC123, abc123") }}
+            {% if form.plate_number.errors %}
+              {% for error in form.plate_number.errors %}
+                <p class="text-danger bg-danger" style="padding: 10px;">{{ error }}</div>
+              {% endfor %}
+            {% endif %}
+          </div>
+          <input type="submit" class="btn btn-primary" value="Consultar">
+          <a href="/sunarp" class="btn btn-default">Regresar</a>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}

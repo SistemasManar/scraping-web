@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% block title %}MANAR{% endblock %}
+
+{% block navbar %}
+  <div class="navbar navbar-fixed-top">
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="container-fluid">
+    <div class="panel panel-default" style="margin-top: 10px;">
+      <div class="panel-heading">
+        <h2 class="panel-title">
+          <strong>Buscar</strong>
+        </h2>
+      </div>
+      <div class="panel-body">
+        <form method="POST" novalidate="">
+          {{ form.hidden_tag() }}
+          <div class="form-group {% if form.term.errors %}has-error{% endif %}">
+            {{ form.term.label(class="control-label") }}
+            {{ form.term(class="form-control", placeholder="C.M.P, Nombres, Apelidos, etc.") }}
+          </div>
+          <input type="submit" class="btn btn-primary" value="Buscar">
+          <a href="/cmp" class="btn btn-default">Regresar</a>
+        </form>
+        <hr>
+        <table id="doctors-table" class="table table-bordered table-condensed" style="font-size: 13px;">
+          <thead>
+            <tr>
+              <th>C.M.P.</th>
+              <th>NOMBRES</th>
+              <th>APELLIDOS</th>
+              <th>ESTADO</th>
+              <th>EMAIL</th>
+              <th>REGIÓN</th>
+            </th>
+          </thead>
+          <tbody>
+            {% for doctor in doctors %}
+              {% set status_to_color = {0: 'info', 1: 'success', 2: 'warning', 3: 'danger'}%}
+              <tr class="{{ status_to_color[doctor[6]] }}">
+                <td>{{ doctor[0] }}</td>
+                <td>
+                  {{ doctor[1] or '-'  }}
+                </td>
+                <td>{{ doctor[2] or '-'  }}</td>
+                <td>{{ doctor[3] or '-'  }}</td>
+                <td>{{ doctor[4] or '-'  }}</td>
+                <td>{{ doctor[5] or '-'  }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script type="text/javascript">
+    function getEnqueuedJobs() {
+      $.ajax({
+        type:"get",
+        url:"/get-queued-jobs",
+        success:function(response) {
+          $("#total-jobs").html(response.jobs);
+        }
+      });
+    }
+
+    $(document).ready(function() {
+      setInterval(getEnqueuedJobs, 5000);
+      $('#doctors-table').DataTable({
+        "searching": false,
+        "language": {
+          "url": "http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
+        },
+        "columnDefs": [
+          {
+            "width": "5%", "targets": 0,
+          },
+          {
+            "width": "20%", "targets": 1,
+          },
+          {
+            "width": "20%", "targets": 2,
+          },
+          {
+            "width": "6%", "targets": 3
+          },
+          {
+            "width": "12%", "targets": 4
+          },
+          {
+            "targets": 0,
+            "render": function (data, type, row, meta) {
+              return "<a href='/cmp/doctor/" + data + "'>" + data +"</a>";
+            }
+          }
+        ]
+      });
+    });
+  </script>
+{% endblock %}
