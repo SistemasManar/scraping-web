@@ -1,0 +1,212 @@
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\appsettings.Development.json
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\appsettings.json
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Consultas.Ejecutador.exe
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Consultas.Ejecutador.deps.json
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Consultas.Ejecutador.runtimeconfig.json
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Consultas.Ejecutador.runtimeconfig.dev.json
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Consultas.Ejecutador.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Consultas.Ejecutador.pdb
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Autofac.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Autofac.Extensions.DependencyInjection.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Hangfire.AspNetCore.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Hangfire.Core.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Hangfire.SqlServer.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\HtmlAgilityPack.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.CommandLine.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Json.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.UserSecrets.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Hosting.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Hosting.WindowsServices.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Configuration.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Console.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Debug.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.EventLog.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.EventSource.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\RestSharp.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\System.Data.SqlClient.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\System.ServiceProcess.ServiceController.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\es\Hangfire.Core.resources.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\fa\Hangfire.Core.resources.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\nl\Hangfire.Core.resources.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\pt-BR\Hangfire.Core.resources.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\pt-PT\Hangfire.Core.resources.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\pt\Hangfire.Core.resources.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\zh-TW\Hangfire.Core.resources.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\zh\Hangfire.Core.resources.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.ServiceProcess.ServiceController.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Consultas.Datos.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Consultas.Servicios.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Consultas.Datos.pdb
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Consultas.Servicios.pdb
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\obj\Release\netcoreapp3.1\Consultas.Ejecutador.csprojAssemblyReference.cache
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\obj\Release\netcoreapp3.1\Consultas.Ejecutador.AssemblyInfoInputs.cache
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\obj\Release\netcoreapp3.1\Consultas.Ejecutador.AssemblyInfo.cs
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\obj\Release\netcoreapp3.1\Consultas.Ejecutador.csproj.CoreCompileInputs.cache
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\obj\Release\netcoreapp3.1\Consultas.Ejecutador.csproj.CopyComplete
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\obj\Release\netcoreapp3.1\Consultas.Ejecutador.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\obj\Release\netcoreapp3.1\Consultas.Ejecutador.pdb
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Ejecutador\obj\Release\netcoreapp3.1\Consultas.Ejecutador.genruntimeconfig.cache
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\appsettings.Development.json
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\appsettings.json
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Consultas.Ejecutador.exe
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Consultas.Ejecutador.deps.json
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Consultas.Ejecutador.runtimeconfig.json
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Consultas.Ejecutador.runtimeconfig.dev.json
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Consultas.Ejecutador.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Consultas.Ejecutador.pdb
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Autofac.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Autofac.Extensions.DependencyInjection.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Hangfire.AspNetCore.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Hangfire.Core.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Hangfire.SqlServer.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\HtmlAgilityPack.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.CommandLine.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Json.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.UserSecrets.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Hosting.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Hosting.WindowsServices.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Configuration.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Console.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Debug.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.EventLog.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.EventSource.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\MySqlConnector.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\RestSharp.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\System.Data.SqlClient.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\System.ServiceProcess.ServiceController.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\es\Hangfire.Core.resources.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\fa\Hangfire.Core.resources.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\nl\Hangfire.Core.resources.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\pt-BR\Hangfire.Core.resources.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\pt-PT\Hangfire.Core.resources.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\pt\Hangfire.Core.resources.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\zh-TW\Hangfire.Core.resources.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\zh\Hangfire.Core.resources.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.ServiceProcess.ServiceController.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Consultas.Datos.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Consultas.Servicios.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Consultas.Datos.pdb
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Consultas.Servicios.pdb
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\obj\Release\netcoreapp3.1\Consultas.Ejecutador.csprojAssemblyReference.cache
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\obj\Release\netcoreapp3.1\Consultas.Ejecutador.AssemblyInfoInputs.cache
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\obj\Release\netcoreapp3.1\Consultas.Ejecutador.AssemblyInfo.cs
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\obj\Release\netcoreapp3.1\Consultas.Ejecutador.csproj.CoreCompileInputs.cache
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\obj\Release\netcoreapp3.1\Consultas.Ejecutador.csproj.CopyComplete
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\obj\Release\netcoreapp3.1\Consultas.Ejecutador.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\obj\Release\netcoreapp3.1\Consultas.Ejecutador.pdb
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Ejecutador\obj\Release\netcoreapp3.1\Consultas.Ejecutador.genruntimeconfig.cache
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\appsettings.Development.json
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\appsettings.json
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Consultas.Ejecutador.exe
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Consultas.Ejecutador.deps.json
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Consultas.Ejecutador.runtimeconfig.json
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Consultas.Ejecutador.runtimeconfig.dev.json
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Consultas.Ejecutador.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Consultas.Ejecutador.pdb
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Autofac.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Autofac.Extensions.DependencyInjection.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Hangfire.AspNetCore.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Hangfire.Core.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Hangfire.SqlServer.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\HtmlAgilityPack.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.CommandLine.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.Json.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Configuration.UserSecrets.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Hosting.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Hosting.Abstractions.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Hosting.WindowsServices.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Configuration.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Console.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Debug.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.EventLog.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.EventSource.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\MySqlConnector.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Newtonsoft.Json.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\RestSharp.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\System.Data.SqlClient.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\System.ServiceProcess.ServiceController.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\es\Hangfire.Core.resources.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\fa\Hangfire.Core.resources.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\nl\Hangfire.Core.resources.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\pt-BR\Hangfire.Core.resources.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\pt-PT\Hangfire.Core.resources.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\pt\Hangfire.Core.resources.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\zh-TW\Hangfire.Core.resources.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\zh\Hangfire.Core.resources.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.ServiceProcess.ServiceController.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Consultas.Datos.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Consultas.Servicios.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Consultas.Datos.pdb
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\bin\Release\netcoreapp3.1\Consultas.Servicios.pdb
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\obj\Release\netcoreapp3.1\Consultas.Ejecutador.csprojAssemblyReference.cache
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\obj\Release\netcoreapp3.1\Consultas.Ejecutador.AssemblyInfoInputs.cache
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\obj\Release\netcoreapp3.1\Consultas.Ejecutador.AssemblyInfo.cs
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\obj\Release\netcoreapp3.1\Consultas.Ejecutador.csproj.CoreCompileInputs.cache
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\obj\Release\netcoreapp3.1\Consultas.Ejecutador.csproj.CopyComplete
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\obj\Release\netcoreapp3.1\Consultas.Ejecutador.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\obj\Release\netcoreapp3.1\Consultas.Ejecutador.pdb
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Ejecutador\obj\Release\netcoreapp3.1\Consultas.Ejecutador.genruntimeconfig.cache

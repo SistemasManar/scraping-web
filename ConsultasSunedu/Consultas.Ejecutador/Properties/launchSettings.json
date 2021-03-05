@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "Consultas.Ejecutador": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

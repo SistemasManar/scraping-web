@@ -1,0 +1,27 @@
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Datos\bin\Release\netcoreapp3.1\Consultas.Datos.deps.json
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Datos\bin\Release\netcoreapp3.1\Consultas.Datos.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Datos\bin\Release\netcoreapp3.1\Consultas.Datos.pdb
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Datos\obj\Release\netcoreapp3.1\Consultas.Datos.csprojAssemblyReference.cache
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Datos\obj\Release\netcoreapp3.1\Consultas.Datos.AssemblyInfoInputs.cache
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Datos\obj\Release\netcoreapp3.1\Consultas.Datos.AssemblyInfo.cs
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Datos\obj\Release\netcoreapp3.1\Consultas.Datos.csproj.CoreCompileInputs.cache
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Datos\obj\Release\netcoreapp3.1\Consultas.Datos.dll
+D:\Fuentes\Visual Studios 2019\Consultas\Consultas.Datos\obj\Release\netcoreapp3.1\Consultas.Datos.pdb
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Datos\bin\Release\netcoreapp3.1\Consultas.Datos.deps.json
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Datos\bin\Release\netcoreapp3.1\Consultas.Datos.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Datos\bin\Release\netcoreapp3.1\Consultas.Datos.pdb
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Datos\obj\Release\netcoreapp3.1\Consultas.Datos.csprojAssemblyReference.cache
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Datos\obj\Release\netcoreapp3.1\Consultas.Datos.AssemblyInfoInputs.cache
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Datos\obj\Release\netcoreapp3.1\Consultas.Datos.AssemblyInfo.cs
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Datos\obj\Release\netcoreapp3.1\Consultas.Datos.csproj.CoreCompileInputs.cache
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Datos\obj\Release\netcoreapp3.1\Consultas.Datos.dll
+D:\Fuentes\Net\Visual Studios 2019\ConsultasSunedu\Consultas.Datos\obj\Release\netcoreapp3.1\Consultas.Datos.pdb
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Datos\bin\Release\netcoreapp3.1\Consultas.Datos.deps.json
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Datos\bin\Release\netcoreapp3.1\Consultas.Datos.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Datos\bin\Release\netcoreapp3.1\Consultas.Datos.pdb
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Datos\obj\Release\netcoreapp3.1\Consultas.Datos.csprojAssemblyReference.cache
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Datos\obj\Release\netcoreapp3.1\Consultas.Datos.AssemblyInfoInputs.cache
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Datos\obj\Release\netcoreapp3.1\Consultas.Datos.AssemblyInfo.cs
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Datos\obj\Release\netcoreapp3.1\Consultas.Datos.csproj.CoreCompileInputs.cache
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Datos\obj\Release\netcoreapp3.1\Consultas.Datos.dll
+E:\03 Proyectos\C#\ConsultasSunedu\Consultas.Datos\obj\Release\netcoreapp3.1\Consultas.Datos.pdb

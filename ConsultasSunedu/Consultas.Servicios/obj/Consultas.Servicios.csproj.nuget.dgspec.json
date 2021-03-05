@@ -1,0 +1,148 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\03 Proyectos\\C#\\ConsultasSunedu\\Consultas.Servicios\\Consultas.Servicios.csproj": {}
+  },
+  "projects": {
+    "E:\\03 Proyectos\\C#\\ConsultasSunedu\\Consultas.Datos\\Consultas.Datos.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\03 Proyectos\\C#\\ConsultasSunedu\\Consultas.Datos\\Consultas.Datos.csproj",
+        "projectName": "Consultas.Datos",
+        "projectPath": "E:\\03 Proyectos\\C#\\ConsultasSunedu\\Consultas.Datos\\Consultas.Datos.csproj",
+        "packagesPath": "C:\\Users\\Increikesoul\\.nuget\\packages\\",
+        "outputPath": "E:\\03 Proyectos\\C#\\ConsultasSunedu\\Consultas.Datos\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Increikesoul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\03 Proyectos\\C#\\ConsultasSunedu\\Consultas.Servicios\\Consultas.Servicios.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\03 Proyectos\\C#\\ConsultasSunedu\\Consultas.Servicios\\Consultas.Servicios.csproj",
+        "projectName": "Consultas.Servicios",
+        "projectPath": "E:\\03 Proyectos\\C#\\ConsultasSunedu\\Consultas.Servicios\\Consultas.Servicios.csproj",
+        "packagesPath": "C:\\Users\\Increikesoul\\.nuget\\packages\\",
+        "outputPath": "E:\\03 Proyectos\\C#\\ConsultasSunedu\\Consultas.Servicios\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Increikesoul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "E:\\03 Proyectos\\C#\\ConsultasSunedu\\Consultas.Datos\\Consultas.Datos.csproj": {
+                "projectPath": "E:\\03 Proyectos\\C#\\ConsultasSunedu\\Consultas.Datos\\Consultas.Datos.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "HangFire.Core": {
+              "target": "Package",
+              "version": "[1.7.11, )"
+            },
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.24, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.11.4, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
