@@ -1,0 +1,20 @@
+{
+  "name": "scrapinglineas",
+  "version": "1.0.0",
+  "description": "Happy Scraping...",
+  "main": "scrap_movistar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node scrap_movistar.js"
+  },
+  "author": "Jose Miralles",
+  "license": "ISC",
+  "dependencies": {
+    "promise-poller": "^1.9.1",
+    "puppeteer": "^5.3.1",
+    "puppeteer-extra": "^3.1.15",
+    "puppeteer-extra-plugin-recaptcha": "^3.1.18",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.9"
+  }
+}
