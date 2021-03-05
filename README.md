@@ -1,2 +1,2 @@
 # scraping-web
-//Ejemplos acerca de web scraping - MANAR PERU SAC
+//Ejemplos acerca de web scraping - MANAR
