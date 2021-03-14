@@ -8,10 +8,10 @@ app = Flask(__name__)
 app.config.from_pyfile('flask.cfg')
 if app.config['ENV'] == 'development':
     app.config['CHROME_DRIVER'] = 'chromedriver78'
-    app.config['DATABASE_NAME'] = 'sunarp'
-    app.config['DATABASE_HOST'] = 'localhost'
-    app.config['DATABASE_USER'] = 'postgres'
-    app.config['DATABASE_PASSWORD'] = 'postgres'
+    app.config['DATABASE_NAME'] = 'scraping'
+    app.config['DATABASE_HOST'] = '35.227.74.45'
+    app.config['DATABASE_USER'] = 'manar'
+    app.config['DATABASE_PASSWORD'] = 'y2k.manar.2019'
     app.config['PROXY_LIST'] = ['127.0.0.1:80']
 
 db = PostgresqlDatabase(
