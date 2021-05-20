@@ -6,7 +6,7 @@ from jobs.utils import get_driver, get_proxy
 
 from models.proxy import Proxy
 
-from models.ruc import RUC
+from models.sunat import RUC
 
 #from PIL import Image, ImageFilter
 

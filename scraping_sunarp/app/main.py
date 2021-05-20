@@ -23,6 +23,7 @@ def create_tables():
         DoctorSpecialty,
         Graduate,
         GraduateRecord,
+        RUC,
         Proxy,
         Vehicle,
         RRLL,
