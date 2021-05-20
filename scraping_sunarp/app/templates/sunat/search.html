@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+{% block title %}MANAR{% endblock %}
+
+{% block navbar %}
+  <div class="navbar navbar-fixed-top">
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="container-fluid">
+    <div class="panel panel-default" style="margin-top: 10px;">
+      <div class="panel-heading">
+        <h2 class="panel-title">
+          <strong>Buscar</strong>
+        </h2>
+      </div>
+      <div class="panel-body">
+        <form method="POST" novalidate="">
+          {{ form.hidden_tag() }}
+          <div class="form-group {% if form.term.errors %}has-error{% endif %}">
+            {{ form.term.label(class="control-label") }}
+            {{ form.term(class="form-control", placeholder="RUC NUMBER") }}
+          </div>
+          <input type="submit" class="btn btn-primary" value="Buscar">
+          <a href="/sunat" class="btn btn-default">Regresar</a>
+        </form>
+        <hr>
+        <table id="ruc-table" class="table table-bordered table-condensed" style="font-size: 13px;">
+          <thead>
+            <tr>
+              <th>REAL</th>
+              <th>N° RUC</th>
+              <th>RUC_NAME</th>
+              <th>T Contribuyente</th>
+              <th>Tipo documento</th>
+              <th>NOMBRE COMERCIAL</th>
+              <th>FECHA INICIO</th>
+              <th>FECHA INSCRIPCION</th>
+              <th>ESTADO CONTRIBUYENTE</th>
+              <th>CONDICION CONTRIBUYENTE</th>
+              <th>DOMICILIO</th>
+              <th>REGION</th>
+              <th>DISTRITO</th>
+              <th>CANTIDAD TRABAJADORES</th>
+              <th>REPRESENTATES LEGALES</th>
+            </th>
+          </thead>
+          <tbody>
+            {% for ruc in rucs %}  
+            {% set state_to_color = {0: 'info', 1: 'success', 2: 'warning', 3: 'danger'}%}
+              
+              <tr class="{{ state_to_color[ruc[23]] }} ">
+                                               
+                  <td>{{ ruc[0] or '-' }}</td>
+                  <td>
+                    {{ ruc[1] or '-'  }}
+                  </td>
+                  <td>{{ ruc[2] or '-'  }}</td>
+                  <td>{{ ruc[3] or '-'  }}</td>
+                  <td>{{ ruc[4] or '-'  }}</td>
+                  <td>{{ ruc[5] or '-'  }}</td>
+                  <td>{{ ruc[6] or '-'  }}</td>
+                  <td>{{ ruc[7] or '-'  }}</td>
+                  <td>{{ ruc[8] or '-'  }}</td>
+                  <td>{{ ruc[9] or '-'  }}</td>
+                  <td>{{ ruc[10] or '-'  }}</td>
+                  <td>{{ ruc[11] or '-'  }}</td>
+                  <td>{{ ruc[12] or '-' }}</td>
+                  <td>{{ ruc[13] or '-' }}</td>                  
+                  {% set owners = '<br>'.join(ruc[22].split('|')) if ruc[22] else '-' %}
+                  <td>{{ owners|safe }}</td>
+                  {% set reLegales = '<br>'.join(ruc[23].split('|')) if ruc[23] else '-' %}
+                  <td>{{ reLegales|safe }}</td>
+                    
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script type="text/javascript">
+    function getEnqueuedJobs() {
+      $.ajax({
+        type:"get",
+        url:"/get-queued-jobs",
+        success:function(response) {
+          $("#total-jobs").html(response.jobs);
+        }
+      });
+    }
+
+    $(document).ready(function() {
+      setInterval(getEnqueuedJobs, 5000);
+      $('#ruc-table').DataTable({
+        "searching": false,
+        "language": {
+          "url": "http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
+        },
+        "columnDefs": [
+          {
+            "width": "20%", "targets": 24
+          },
+          {
+            "targets": 0,
+            "render": function (data, type, row, meta) {
+              return "<a href='/sunat/ruc/" + data + "'>" + data +"</a>";
+            }
+          }
+        ]
+      });
+    });
+  </script>
+{% endblock %}

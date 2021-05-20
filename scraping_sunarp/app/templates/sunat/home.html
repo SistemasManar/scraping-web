@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+
+{% block title %}MANAR{% endblock %}
+
+{% block styles %}
+  {{ super() }}
+{% endblock %}
+
+{% block content %}
+  <div class="container-fluid" style="margin-top: 10px;">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+            <div class="alert alert-{{ category }}" role="alert">
+              {{ message }}
+            </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h2 class="panel-title">
+          <strong>RUC Scraping</strong>
+        </h2>
+      </div>
+      <div class="panel-body">
+        <p class="lead">Mostrando los últimos registros</p>
+        <table id="ruc-table" class="table table-bordered table-condensed" style="font-size: 13px;">
+          <thead>
+            <tr>
+              <th>REAL</th>
+              <th>N° RUC</th>
+              <th>RUC NAME</th>
+              <th>TIPO CONTRIBUYENTE</th>
+              <th>TIPO DOCUMENTO</th>
+              <th>NOMBRE COMERCIAL</th>
+              <th>FECHA INICIO</th>
+              <th>FECHA INSCRIPCION</th>
+              <th>ESTADO CONTRIBUYENTE</th>
+              <th>CONDICION CONTRIBUYENTE</th>
+              <th>DOMICILIO</th>
+              <th>REGION</th>
+              <th>DISTRITO</th>
+              <th>CANTIDAD TRABAJADORES</th>
+              <th>REPRESENTATES LEGALES</th>
+            </th>
+          </thead>
+          <tbody>
+            {% for ruc in rucs %}
+              {% set state_to_color = {0: 'info', 1: 'success', 2: 'warning', 3: 'danger'}%}
+              <tr class="{{ state_to_color[ruc[25]] }}">
+                <td>{{ ruc[0] }}</td>
+                <td class="{% if ruc[12] == True %}danger{% endif %}">
+                  {{ ruc[1] or '-'  }}
+                </td>
+                <td>{{ ruc[2] or '-'  }}</td>
+                <td>{{ ruc[3] or '-'  }}</td>
+                <td>{{ ruc[4] or '-'  }}</td>
+                <td>{{ ruc[5] or '-'  }}</td>
+                <td>{{ ruc[6] or '-'  }}</td>
+                <td>{{ ruc[7] or '-'  }}</td>
+                <td>{{ ruc[8] or '-'  }}</td>
+                <td>{{ ruc[9] or '-'  }}</td>
+                <td>{{ ruc[10] or '-'  }}</td>
+                <td>{{ ruc[11] or '-'  }}</td>
+                <td>{{ ruc[12] or '-' }}</td>
+                {% set owners = '<br>'.join(ruc[23].split('|')) if ruc[23] else '-' %}
+                <td>{{ owners|safe }}</td>
+                {% set legalre = '<br>'.join(ruc[24].split('|')) if ruc[24] else '-' %}
+                <td>{{ legalre|safe }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <div class="actions" style="margin-top: 15px;">
+          <a href="/" class="btn btn-default">
+            <i class="fa fa-arrow-left fa-fw"></i>
+            Regresar
+          </a>
+          <a href="/sunat/search" class="btn btn-default">
+            <i class="fa fa-search fa-fw"></i>
+            Buscar
+          </a>
+          <a href="/sunat/query" class="btn btn-default">
+            <i class="fa fa-user-circle fa-fw"></i>
+            Consultar RUC
+          </a>
+          <a href="/sunat/upload" class="btn btn-default">
+            <i class="fa fa-upload fa-fw"></i>
+            Subir archivo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#ruc-table').DataTable({
+        "info": false,
+        "searching": false,
+        "paging": false,
+        "language": {
+          "url": "http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
+        },
+        "columnDefs": [
+          {
+            "width": "20%", "targets": 25
+          },
+          {
+            "targets": 0,
+            "render": function (data, type, row, meta) {
+              return "<a href='/sunat/ruc/" + data + "'>" + data +"</a>";
+            }
+          }
+        ]
+      });
+    });
+  </script>
+{% endblock %}

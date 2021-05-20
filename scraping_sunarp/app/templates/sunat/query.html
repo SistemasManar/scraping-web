@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}MANAR{% endblock %}
+
+{% block navbar %}
+  <div class="navbar navbar-fixed-top">
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="panel panel-default" style="margin-top: 10px;">
+      <div class="panel-heading">
+        <h2 class="panel-title">
+          <strong>Consultar RUC</strong>
+        </h2>
+      </div>
+      <div class="panel-body">
+        <form method="POST" enctype="multipart/form-data" novalidate="">
+          {{ form.hidden_tag() }}
+          <div class="form-group {% if form.ruc_number.errors %}has-error{% endif %}">
+            {{ form.ruc_number.label(class="control-label") }}
+            {{ form.ruc_number(class="form-control", placeholder="RUC NUMBER") }}
+            {% if form.ruc_number.errors %}
+              {% for error in form.ruc_number.errors %}
+                <p class="text-danger bg-danger" style="padding: 10px;">{{ error }}</div>
+              {% endfor %}
+            {% endif %}
+          </div>
+          <input type="submit" class="btn btn-primary" value="Consultar">
+          <a href="/sunat" class="btn btn-default">Regresar</a>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}
